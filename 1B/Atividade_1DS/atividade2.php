@@ -54,9 +54,9 @@
     $fruta=15;
     $chave=20;
     $relógio=soma($tomate,$bicho);
-    $bola1=cadeira($fruta,$chave);
+    $bola1=subtracao($fruta,$chave);
     $cachorro=multiplicacao($tomate,$fruta);
     $vaca=divisao($bicho,$tomate);
-    $vassoura=maçã($relógio,$bola1);
+    $vassoura=soma($relógio,$bola1);
     echo "Relógio: ".$relógio."; Bola1: ".$bola1."; Cachorro: ".$cachorro."; Vaca: ".$vaca."; Vassoura: ".$vassoura;
 ?>
