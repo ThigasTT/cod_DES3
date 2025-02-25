@@ -1,4 +1,4 @@
-<?php
+2<?php
     $nome='João';
     $idade=20 ;
     $profissao='programador';
