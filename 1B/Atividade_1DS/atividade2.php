@@ -1,62 +1,72 @@
 <?php 
-    $numero1=10; // joaquim = numero1
-    $numero2=20;  //abelha = numero2
-    $resultado=$numero1+$numero2; //passarinho = resultado
-    
-    function soma($a,$b){ //funcao soma = maca
-        $banana=$a+$b;
-        return $banana;
+//Declaração das primeiras variaveis
+    $numero1=10;
+    $numero2=20;
+    $resultado=$numero1+$numero2;
+
+    //funçao de soma com duas variaveis
+    function soma($a,$b){
+        $resultado=$a+$b;
+        return $resultado;
     }
-    
-    function subtracao($a,$b){//funcao subtracao = cadeira
-        $limao=$a-$b;
-        return $limao;
+     //funçao de subtração com duas variaveis
+    function subtracao($a,$b){
+        $resultado=$a-$b;
+        return $resultado;
     }
-    
-    function multiplicacao($a,$b){//funcao multiplicacao = livro
-        $gato=$a*$b;
-        return $gato;
+     //funçao de multiplicação com duas variaveis
+    function multiplicacao($a,$b){
+        $resultado=$a*$b;
+        return $resultado;
     }
-    
-    function divisao($a,$b){//funcao divisao = flor
+     //funçao de divisão com duas variaveis
+    function divisao($a,$b){
         if($b==0){
             return "Erro";
         }else{
-            $pato=$a/$b;
-            return $pato;
+            $resultado=$a/$b;
+            return $resultado;
         }
     }
-    
-    $resultado2=soma($numero1,$numero2); //bola = resultado2
-    $resultado3=subtracao($numero1,$numero2);//livro1 = resultado3
-    $resultado4=multiplicacao($numero1,$numero2);//caneta = resultado4
-    $resultado5=divisao($numero1,$numero2);//carro = resultado5
-    $resultado6=soma($resultado2,$resultado3);//batata = resultado6
-    $resultado7=divisao($resultado6,$resultado5);//arcoiris = resultado7
-    $resultado8=soma($resultado4,$resultado7);//banana = resultado8
-    $resultado9=subtracao($resultado8,$resultado2);//girafa = resultado9
-    
-    echo "Bola: ".$resultado2."; Livro: ".$resultado3."; Caneta: ".$resultado4."; Carro: ".$resultado5."; Girafa: ".$resultado9;
-    
+    //declarando variaveis
+    $resultado2=soma($numero1,$numero2);
+    $resultado3=subtracao($numero1,$numero2);
+    $resultado4=multiplicacao($numero1,$numero2);
+    $resultado5=divisao($numero1,$numero2);
+    $resultado6=soma($resultado2,$resultado3);
+    $resultado7=divisao($resultado6,$resultado5);
+    $resultado8=soma($resultado4,$resultado7);
+    $resultado9=subtracao($resultado8,$resultado2);
+    //exibindo resultado
+    echo "resultado2: ".$resultado2."; resultado3: ".$resultado3."; resultado4: ".$resultado4."; resultado5: ".$resultado5."; resultado6: ".$resultado9;
+    //declarando variaveis
     $numero3=15;
-    $gato=5;
-    $papel=3;
-    $urso=$numero3*$gato-$papel;
+    $numero4=5;
+    $numero5=3; 
+    $resultado10=$numero3*$numero4-$numero5;
+    //exibindo o resultado
+    echo "resultado10: ".$resultado10;
     
-    echo "Urso: ".$urso;
-    
-    $aviao=divisao($urso,2);
-    $oculos=soma($aviao,10);
-    $elefante=subtracao($oculos,5);
-    echo "Elefante:".$elefante;
-    $tomate=5;
-    $bicho=10;
-    $fruta=15;
-    $chave=20;
-    $relógio=soma($tomate,$bicho);
-    $bola1=subtracao($fruta,$chave);
-    $cachorro=multiplicacao($tomate,$fruta);
-    $vaca=divisao($bicho,$tomate);
-    $vassoura=soma($relógio,$bola1);
-    echo "Relógio: ".$relógio."; Bola1: ".$bola1."; Cachorro: ".$cachorro."; Vaca: ".$vaca."; Vassoura: ".$vassoura;
+    //realizando operações
+    $resultadoDivisao=divisao($resultado10,2);
+    $resultadoSoma=soma($resultadoDivisao,10);
+    $resultadoFinal=subtracao($resultadoSoma,5);
+    //exibindo o resultado
+    echo "resultado final:".$resultadoFinal;
+
+    //declarando variaveis
+    $numero6=5; 
+    $numero7=10;
+    $numero8=15; 
+    $numero9=20; 
+    //realizando operações
+    $resultadoSoma2=soma($numero6,$numero7);
+    $resultadoSubtracao2=subtracao($numero8,$numero9);
+    $resultadoMultiplicacao2=multiplicacao($numero6,$numero8);
+    $resultadoDivisao2=divisao($numero7,$numero6);
+    $resultadoFinal2=soma($resultadoSoma2,$bola1);
+    //exibindo resultado
+    echo "resultado da soma2: ".$resultadoSoma2."; resultado Subtracao 2: ".$resultadoSubtracao2.
+    "; resultado Multiplicacao 2: ".$resultadoMultiplicacao2."; resultado Divisao 2: ".$resultadoDivisao2.
+    "; resultado final 2: ".$resultadoFinal2;
 ?>
